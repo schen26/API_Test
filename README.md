@@ -12,12 +12,12 @@ This is a guide on how to use this application.
 
 Place the required URL into ResponseTest class to check:
 
-  - response code (200 for successful connection)
+  - response code (200 OK/404 Not Found)
   - API headers (numbers vary from API to API)
 
 Place the required URL or JSON file path into GhibliFilmTest class to check:
 
   - JSON payload
 
-> Need to create new JSON file of the containing the data and get the  
+> Need to create new JSON file containing the data in the resource directory if using file path method.  
 
