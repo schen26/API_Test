@@ -1,10 +1,8 @@
 # API Testing Framework for Studio Ghibli Films
 
-<div style="text-align:center"><img src="https://i.imgur.com/oprn9Qn.png?1" /></div>
 <p align="center">
   <img src="https://i.imgur.com/oprn9Qn.png?1" />
 </p>
-![Imgur](https://i.imgur.com/oprn9Qn.png?1)
 
 ## Manual
 
