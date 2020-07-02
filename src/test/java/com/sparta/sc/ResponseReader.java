@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -22,7 +21,6 @@ public class ResponseReader {
 
     public int gettingResponseCode() {
         int response = 0;
-
         try {
             con = (HttpURLConnection) url.openConnection();
             response = con.getResponseCode();
@@ -32,19 +30,15 @@ public class ResponseReader {
         return response;
     }
 
-    public ArrayList<String> gettingHeaders() {
-        ArrayList<String> headers = new ArrayList<>();
-
+    public Map<String, List<String>> gettingHeaders() {
+        Map<String, List<String>> headersMap;
         try {
             con = (HttpURLConnection) url.openConnection();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        Map<String, List<String>> headersMap = con.getHeaderFields();
-        headers.addAll(headersMap.keySet());
-
-        return headers;
+        headersMap = con.getHeaderFields();
+        return headersMap;
     }
 }
 
