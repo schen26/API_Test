@@ -1,6 +1,6 @@
 # API Testing Framework for Studio Ghibli Films
 
-![Imgur](https://i.imgur.com/Sk8wuRN.png?1)
+![Imgur](https://i.imgur.com/oprn9Qn.png?1)
 
 ## Manual
 
