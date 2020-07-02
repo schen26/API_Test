@@ -10,8 +10,8 @@ public class GhibliFilmPOJO {
     private List<String> locations;
     private List<String> people;
     private String producer;
-    private String releaseDate;
-    private String rtScore;
+    private String release_date;
+    private String rt_score;
     private List<String> species;
     private String title;
     private String url;
@@ -48,12 +48,12 @@ public class GhibliFilmPOJO {
         return producer;
     }
 
-    public String getReleaseDate() {
-        return releaseDate;
+    public String getRelease_date() {
+        return release_date;
     }
 
-    public String getRtScore() {
-        return rtScore;
+    public String getRt_score() {
+        return rt_score;
     }
 
     public List<String> getSpecies() {
