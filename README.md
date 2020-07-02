@@ -5,7 +5,14 @@
 </p>
 
 ## Manual
+
 This is a guide on how to use this application.
+
+### Background
+
+This application uses two dependencies from Maven repository in the pom.xml file:
+  - Jackson
+  - Junit 
 
 > It is not required to do these instructions in sequence.
 
