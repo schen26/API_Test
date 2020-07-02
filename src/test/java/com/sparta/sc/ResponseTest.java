@@ -120,10 +120,8 @@ public class ResponseTest {
 
     @Test
     void testTransferEncodingHeader() {
-        for (String key : headersMap.keySet()) {
-            if (headersMap.containsKey(key)) {
-                Assertions.assertEquals("chunked", headersMap.get(key).toArray()[0]);
-            }
+        if (headersMap.containsKey("Transfer-Encoding")) {
+            Assertions.assertEquals("chunked", headersMap.get("Transfer-Encoding").toArray()[0]);
         }
     }
 
