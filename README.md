@@ -13,6 +13,8 @@ This application uses two dependencies from Maven repository in the pom.xml file
   
  > Please update it to the latest version if needed
  
+ <br />
+ 
  Classes within the project structure:
  
   - GhibliFilmPOJO
@@ -22,21 +24,19 @@ This application uses two dependencies from Maven repository in the pom.xml file
   - FileURLReader
   
 ## Manual
-  
-This is a guide on how to use this application.
 
-> It is not required to do these instructions in sequence.
-
-<br />
+Place all the required variables inside the POJO according to the keys in JSON payload
 
 Place the required URL into ResponseTest class to check:
+
   - response code (200 OK/404 Not Found)
-  - API headers (numbers vary from API to API)
+  - API headers (15 for this API)
   
 <br />
 
 Place the required URL or JSON file path into GhibliFilmTest class to check:
-  - JSON payload
+
+  - JSON payload (13 for this API)
 
 > Need to create new JSON file containing the data in the resource directory if using file path method.  
 
