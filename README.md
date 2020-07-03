@@ -4,15 +4,26 @@
   <img src="https://i.imgur.com/oprn9Qn.png?1" />
 </p>
 
-## Manual
-
-This is a guide on how to use this application.
-
-### Background
+## Background
 
 This application uses two dependencies from Maven repository in the pom.xml file:
+
   - Jackson
   - Junit 
+  
+ > Please update it to the latest version if needed
+ 
+ This application contains the following classes:
+ 
+  - GhibliFilmPOJO
+  - GhibliFilmTest
+  - ResponseReader
+  - ResponseTest
+  - FileURLReader
+  
+## Manual
+  
+This is a guide on how to use this application.
 
 > It is not required to do these instructions in sequence.
 
