@@ -34,7 +34,7 @@ This is a guide on how to use this application.
 Place the required URL into ResponseTest class to check:
 
   - response code (200 OK/404 Not Found)
-  - API headers (numbers vary from API to API, 15 for this API)
+  - API headers (15 for this API)
   
 <br />
 
