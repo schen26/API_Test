@@ -13,7 +13,7 @@ This application uses two dependencies from Maven repository in the pom.xml file
   
  > Please update it to the latest version if needed
  
- This application contains the following classes:
+ Classes within the project structure:
  
   - GhibliFilmPOJO
   - GhibliFilmTest
