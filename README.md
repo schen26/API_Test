@@ -24,12 +24,8 @@ This application uses two dependencies from Maven repository in the pom.xml file
   - FileURLReader
   
 ## Manual
-  
-This is a guide on how to use this application.
 
-> It is not required to do these instructions in sequence.
-
-<br />
+Place all the required variables inside the POJO according to the keys in JSON payload
 
 Place the required URL into ResponseTest class to check:
 
