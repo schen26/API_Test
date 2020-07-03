@@ -16,11 +16,6 @@ public class ResponseTest {
     }
 
     @Test
-    void testNumberOfHeaders() {
-        Assertions.assertEquals(15, headersMap.size());
-    }
-
-    @Test
     void testServerHeader() {
         if (headersMap.containsKey("Server")) {
             Assertions.assertEquals("Cowboy", headersMap.get("Server").toArray()[0]);

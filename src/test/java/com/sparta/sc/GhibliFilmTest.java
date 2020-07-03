@@ -13,18 +13,8 @@ public class GhibliFilmTest {
     String score = ghibliFilmPOJO.getRt_score();
 
     @Test
-    void testTitle() {
-        Assertions.assertFalse(ghibliFilmPOJO.getTitle().isEmpty());
-    }
-
-    @Test
     void testTitleIsString() {
         Assertions.assertTrue(ghibliFilmPOJO.getTitle().matches("[\\w ]+"));
-    }
-
-    @Test
-    void testProducer() {
-        Assertions.assertFalse(ghibliFilmPOJO.getProducer().isEmpty());
     }
 
     @Test
@@ -33,18 +23,8 @@ public class GhibliFilmTest {
     }
 
     @Test
-    void testID() {
-        Assertions.assertFalse(ghibliFilmPOJO.getId().isEmpty());
-    }
-
-    @Test
     void testIDContainsRightCharacters() {
         Assertions.assertTrue(ghibliFilmPOJO.getId().matches("[a-z0-9\\-]+"));
-    }
-
-    @Test
-    void testDirector() {
-        Assertions.assertFalse(ghibliFilmPOJO.getDirector().isEmpty());
     }
 
     @Test
@@ -53,13 +33,8 @@ public class GhibliFilmTest {
     }
 
     @Test
-    void testReleaseDate() {
-        Assertions.assertFalse(releaseDate.isEmpty());
-    }
-
-    @Test
     void testReleaseDateLength() {
-        Assertions.assertEquals(4, releaseDate.length());
+        Assertions.assertTrue(releaseDate.matches("[\\d]{4}"));
     }
 
     @Test
@@ -70,13 +45,8 @@ public class GhibliFilmTest {
     }
 
     @Test
-    void testRtScore() {
-        Assertions.assertFalse(score.isEmpty());
-    }
-
-    @Test
     void testRtScoreLength() {
-        Assertions.assertEquals(2, score.length());
+        Assertions.assertTrue(score.matches("[\\d]{2}"));
     }
 
     @Test
@@ -96,17 +66,17 @@ public class GhibliFilmTest {
     }
 
     @Test
-    void testSpecies() {
+    void testAllSpecies() {
         Assertions.assertTrue(ghibliFilmPOJO.getSpecies().stream().allMatch(n -> n.startsWith("https://")));
     }
 
     @Test
-    void testLocation() {
+    void testAllLocation() {
         Assertions.assertTrue(ghibliFilmPOJO.getLocations().stream().allMatch(n -> n.startsWith("https://")));
     }
 
     @Test
-    void testVehicles() {
+    void testAllVehicles() {
         Assertions.assertTrue(ghibliFilmPOJO.getVehicles().stream().allMatch(n -> n.startsWith("https://")));
     }
 
