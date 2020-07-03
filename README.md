@@ -13,6 +13,8 @@ This application uses two dependencies from Maven repository in the pom.xml file
   
  > Please update it to the latest version if needed
  
+ <br />
+ 
  Classes within the project structure:
  
   - GhibliFilmPOJO
